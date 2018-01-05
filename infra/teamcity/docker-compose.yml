@@ -7,7 +7,7 @@ services:
             - teamcity-server-datadir:/data/teamcity_server/datadir
             - teamcity-server-logs:/opt/teamcity/logs
         ports:
-            - 8111:8111
+            - 8112:8111
     teamcity-agent:
         image: aspnetcore/teamcity-agent-with-compose:2017.1.2
         build: ./agent
